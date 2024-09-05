@@ -2,14 +2,19 @@
 
 
 ![License CC](https://img.shields.io/badge/license-CC-green.svg?style=plastic)
-![Format PNG](https://img.shields.io/badge/format-PNG-green.svg?style=plastic)
-
+![Format JPG](https://img.shields.io/badge/format-JPG-green.svg?style=plastic)
+![Images 1208](https://img.shields.io/badge/images-1208-green.svg?style=plastic)
 
 ![Teaser image](./fsxl-teaser.png)
 
 The Flickr-Suits-XL Dataset (FSXL) contains images of people wearing suits. 
 
 The image resolutions are the same as [SDXL](https://arxiv.org/abs/2307.01952) as indicated in Appendix I. 
+
+The subjects are mostly male. 
+
+## Image Resolutions
+![Image Resolutions](./fsxl-image-resolutions.png)
 
 
 
