@@ -13,6 +13,31 @@ The image resolutions are the same as [SDXL](https://arxiv.org/abs/2307.01952) a
 
 The subjects are mostly male. 
 
+---
+
+more information for each image can be found in `fsxl-metadata.json`
+```
+[
+    {
+        "image_name": "20716603320.jpg",
+        "photo_url": "https://www.flickr.com/photos/35591378@N03/20716603320",
+        "photo_title": "P040915PS-0974",
+        "author": "Obama White House Archived",
+        "country": "",
+        "license": "United States Government Work",
+        "license_url": "http://www.usa.gov/copyright.shtml",
+        "date_uploaded": "2015-08-26",
+        "date_crawled": "2024-07-19"
+    },
+    ...
+]
+```
+
+
+
+
+
+
 ## Image Resolutions
 ![Image Resolutions](./fsxl-image-resolutions.png)
 
