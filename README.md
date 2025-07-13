@@ -1,22 +1,25 @@
-# Flickr-Suits-XL Dataset (FSXL) 
+# Flickr-Suits-XL Dataset (FSXL)
 
-
-![License CC](https://img.shields.io/badge/license-CC-green.svg?style=plastic)
+![License CC](https://img.shields.io/badge/license-CC--BY--NC--SA%204.0-green.svg?style=plastic)
 ![Format JPG](https://img.shields.io/badge/format-JPG-green.svg?style=plastic)
 ![Images 1208](https://img.shields.io/badge/images-1208-green.svg?style=plastic)
 
 ![Teaser image](./fsxl-teaser.png)
 
-The Flickr-Suits-XL Dataset (FSXL) contains images of people wearing suits. 
+The **Flickr-Suits-XL (FSXL)** dataset contains **1208 high-quality images** of people wearing suits, collected from Flickr under permissive licenses. 
 
-The image resolutions are the same as [SDXL](https://arxiv.org/abs/2307.01952) as indicated in Appendix I. 
+The dataset was curated by crawling Flickr for over **5687 images** and filtering down using face detection (via **MTCNN**), alignment, and cropping steps to center the face horizontally and place it at approximately **1/3 from the top vertically**. This ensures consistency with resolutions used in [SDXL](https://arxiv.org/abs/2307.01952) models.
 
-The subjects are mostly male. 
+> 📌 **Note**: There is a noticeable **gender imbalance** in FSXL, with **male subjects being the majority**.
 
 ---
 
-more information for each image can be found in `fsxl-metadata.json`
-```
+## Metadata
+
+More information for each image is available in the file: [fsxl-metadata.json](fsxl-metadata.json)
+
+Example entry:
+```json
 [
     {
         "image_name": "20716603320.jpg",
@@ -28,20 +31,38 @@ more information for each image can be found in `fsxl-metadata.json`
         "license_url": "http://www.usa.gov/copyright.shtml",
         "date_uploaded": "2015-08-26",
         "date_crawled": "2024-07-19"
-    },
-    ...
+    }
 ]
 ```
 
 
 
-
-
-
 ## Image Resolutions
+
+
+The image resolutions align with the SDXL training specifications (~1MP):
+
+
 ![Image Resolutions](./fsxl-image-resolutions.png)
 
 
+## BibTeX
+
+```bib
+@inproceedings{Ulusan2025SynData4CV,  
+  author        = {Ulusan, Koray and Kiefer, Benjamin},
+  title         = {{Generating Synthetic Data via Augmentations for Improved Facial Resemblance in DreamBooth and InstantID}},
+  booktitle     = {Proceedings of the CVPR 2025 Workshop on Synthetic Data for Computer Vision (SynData4CV)},
+  year          = {2025},
+  month         = {May},
+  url           = {https://openreview.net/forum?id=2o0RxrcV23},
+  note          = {Accepted to the CVPR 2025 SynData4CV Workshop},
+  eprint        = {2505.03557},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CV},
+  doi           = {10.48550/arXiv.2505.03557}
+}
+```
 
 ## Licenses
 
