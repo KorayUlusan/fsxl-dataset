@@ -6,19 +6,25 @@
 
 ![Teaser image](./fsxl-teaser.png)
 
-The **Flickr-Suits-XL (FSXL)** dataset contains **1208 high-quality images** of people wearing suits, collected from Flickr under permissive licenses. 
+The **Flickr-Suits-XL (FSXL)** dataset provides **1208 high-quality portrait images** of individuals wearing suits. This dataset is ideal for **computer vision research**, especially in areas like **facial recognition, portrait generation, and synthetic data augmentation**.
 
-The dataset was curated by crawling Flickr for over **5687 images** and filtering down using face detection (via **MTCNN**), alignment, and cropping steps to center the face horizontally and place it at approximately **1/3 from the top vertically**. This ensures consistency with resolutions used in [SDXL](https://arxiv.org/abs/2307.01952) models.
+Images were sourced from Flickr under permissive licenses. The curation process involved:
+- Crawling **5687 images** from Flickr.
+- Filtering using **MTCNN face detection**.
+- Performing face alignment.
+- Cropping images to center the face horizontally and position it at approximately **1/3 from the top vertically**.
+- Standardizing image resolutions to match the **SDXL model specifications (~1 megapixel)**.
 
-> 📌 **Note**: There is a noticeable **gender imbalance** in FSXL, with **male subjects being the majority**.
+> 📌 **Note**: The dataset exhibits a **gender imbalance**, with **male subjects being the majority**.
 
 ---
 
 ## Metadata
 
-More information for each image is available in the file: [fsxl-metadata.json](fsxl-metadata.json)
+Detailed metadata for each image is available in the file: [fsxl-metadata.json](fsxl-metadata.json).
 
 Example entry:
+
 ```json
 [
     {
@@ -35,20 +41,21 @@ Example entry:
 ]
 ```
 
-
+---
 
 ## Image Resolutions
 
-
-The image resolutions align with the SDXL training specifications (~1MP):
-
+All images are processed to match **SDXL training specifications** (~1MP):
 
 ![Image Resolutions](./fsxl-image-resolutions.png)
 
+---
 
-## BibTeX
+## Citation (BibTeX)
 
-```bib
+If you use the FSXL dataset in your research, please cite:
+
+```bibtex
 @inproceedings{Ulusan2025SynData4CV,  
   author        = {Ulusan, Koray and Kiefer, Benjamin},
   title         = {{Generating Synthetic Data via Augmentations for Improved Facial Resemblance in DreamBooth and InstantID}},
@@ -64,18 +71,26 @@ The image resolutions align with the SDXL training specifications (~1MP):
 }
 ```
 
+---
+
 ## Licenses
 
-The individual images were published in Flickr by their respective authors under either [Creative Commons BY 2.0](https://creativecommons.org/licenses/by/2.0/), [Creative Commons BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/), [Public Domain Mark 1.0](https://creativecommons.org/publicdomain/mark/1.0/), [Public Domain CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), or [U.S. Government Works](http://www.usa.gov/copyright.shtml) license. All of these licenses allow **free use, redistribution, and adaptation for non-commercial purposes**. However, some of them require giving **appropriate credit** to the original author, as well as **indicating any changes** that were made to the images. The license and original author of each image are indicated in the metadata.
+The individual images are published under the following licenses:
+- [Creative Commons BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- [Creative Commons BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
+- [Public Domain Mark 1.0](https://creativecommons.org/publicdomain/mark/1.0/)
+- [Public Domain CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- [U.S. Government Works](http://www.usa.gov/copyright.shtml)
 
-* [https://creativecommons.org/licenses/by/2.0/](https://creativecommons.org/licenses/by/2.0/)
-* [https://creativecommons.org/licenses/by-nc/2.0/](https://creativecommons.org/licenses/by-nc/2.0/)
-* [https://creativecommons.org/publicdomain/mark/1.0/](https://creativecommons.org/publicdomain/mark/1.0/)
-* [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
-* [http://www.usa.gov/copyright.shtml](http://www.usa.gov/copyright.shtml)
+All these licenses permit **free use, redistribution, and adaptation for non-commercial purposes**, provided that:
+- **Credit is attributed** to the original author.
+- **Modifications are disclosed**.
 
-The dataset itself is made available under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). You can **use, redistribute, and adapt it for non-commercial purposes**, as long as you (a) **indicate any changes** that you've made, and (b) distribute any derivative works **under the same license**.
+### Dataset License
 
-* [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+The FSXL dataset itself is released under the [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license:
+- ✅ **Non-commercial use only**
+- ✅ **Attribution required**
+- ✅ **Share derivatives under the same license**
 
-This decision was made because [Creative Commons CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) restricts the commercial use.
+This ensures ethical and responsible use while maintaining openness for academic and research purposes.
